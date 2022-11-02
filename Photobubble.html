@@ -16,37 +16,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>360 Image</title>
   </head>
-  <ul class="nav">
-    <li class="nav-item">
-      <a
-        class="nav-link active"
-        aria-current="page"
-        href="https://ismargol.github.io/index.html"
-        style="color: white"
-         ><b>Home</b></a
-      >
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" 
-         href="https://ismargol.github.io/Photobubble.html"
-         style="color: white"
-         ><b>360 Image</b></a
-      >
-    </li>
-  </ul>
-
   <body>
     Hello world!
     <a-scene>
-      <a-sky src="360miami.jpeg" rotation="0 -130 0"></a-sky>
-
+      <a-sky
+        src="360miami.jpeg"
+        rotation="0 -130 0"
+      ></a-sky>
       <a-text
         font="kelsonsans"
-        color="navy"
-        value="Hey Professor!"
-        width="6"
-        position="-2 2.5 -2.5"
-        rotation="0 20 0"
+        color="white"
+        value="Bienvenidos a Miami!"
+        outline= "5px solid black"
+        width="23"
+        position="20 2.5 -5"
+        rotation="0 -65 0"
+      ></a-text>
+      <a-text
+        font="kelsonsans"
+        color="orange"
+        value="Welcome to my home!"
+        width="18"
+        position="-8 4 8"
+        rotation="10 90 0"
       ></a-text>
     </a-scene>
   </body>
