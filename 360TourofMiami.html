@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <a-scene>
-  <a-assets>
-    <img id="Biscayne Bay" src="https://ismargol.github.io/BiscayneBay.JPG">
-    <img id="Biscaynethumb" src="https://ismargol.github.io/Biscayne%20Thumb.png">
-    <img id="Heat Arena and Freedom Tower" src="https://ismargol.github.io/ArenaandTower.JPG">
-    <img id="Arenathumb" src="https://ismargol.github.io/Arena%20Thumb.png">
-    <img id="Wynwood Walls" src="https://ismargol.github.io/WynwoodWalls.JPG">
-    <img id="Wynwoodthumb" src="https://ismargol.github.io/Wynwood thumb.png">
-    <img id="Torch of Friendship" src="https://ismargol.github.io/TorchofFriendship.JPG">
-    <img id="Torchthumb" src="https://ismargol.github.io/Torch%20Thumb.png">
-    <img id="Margaret Pace Park" src="https://ismargol.github.io/MargaretPace.JPG">
-    <img id="Parkthumb" src="https://ismargol.github.io/Park%20Thumb.png">
-  </a-assets>
-  <a-sky id="image-360" radius="10" src="#city"></a-sky>
-
-  <a-entity class="link"></a-entity>
-
-  <a-camera>
-    <a-cursor
-      id="cursor"
-      animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
-      animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
-      animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
-  </a-camera>
-</a-scene>
+<html>
+  <head>
+    <title>360° Tour of Miami</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@4.x.x/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
+     <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+      <!-- ... -->
+    </a-scene>
+  </body>
 </html>
