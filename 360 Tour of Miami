@@ -14,10 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ian's Page</title>
   </head>
+
   <div style="text-align: center">
     <h1><b> Take a 360 Tour of Miami!</b></h1>
-    <br>
-    <br>
+    <br />
+    <br />
     <body style="background-color: slategray">
       <iframe
         width="100%"
