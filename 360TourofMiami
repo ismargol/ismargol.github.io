@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ian's Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ian's Page</title>
-  </head>
+  <a-scene>
+  <a-assets>
+    <img id="Biscayne Bay" src="https://ismargol.github.io/BiscayneBay.JPG">
+    <img id="Biscaynethumb" src="https://ismargol.github.io/Biscayne%20Thumb.png">
+    <img id="Heat Arena and Freedom Tower" src="https://ismargol.github.io/ArenaandTower.JPG">
+    <img id="Arenathumb" src="https://ismargol.github.io/Arena%20Thumb.png">
+    <img id="Wynwood Walls" src="https://ismargol.github.io/WynwoodWalls.JPG">
+    <img id="Wynwoodthumb" src="https://ismargol.github.io/Wynwood thumb.png">
+    <img id="Torch of Friendship" src="https://ismargol.github.io/TorchofFriendship.JPG">
+    <img id="Torchthumb" src="https://ismargol.github.io/Torch%20Thumb.png">
+    <img id="Margaret Pace Park" src="https://ismargol.github.io/MargaretPace.JPG">
+    <img id="Parkthumb" src="https://ismargol.github.io/Park%20Thumb.png">
+  </a-assets>
+  <a-sky id="image-360" radius="10" src="#city"></a-sky>
 
-  <div style="text-align: center">
-    <h1><b> Take a 360 Tour of Miami!</b></h1>
-    <br />
-    <br />
-    <body style="background-color: slategray">
-      <iframe
-        width="100%"
-        height="600"
-        src="https://uploads.knightlab.com/scenevr/10378/c46d4a19/index.html"
-        frameborder="0"
-        allowfullscreen
-      />
-    </body>
-  </div>
+  <a-entity class="link"></a-entity>
+
+  <a-camera>
+    <a-cursor
+      id="cursor"
+      animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
+      animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
+      animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
+  </a-camera>
+</a-scene>
 </html>
